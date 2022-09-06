@@ -112,8 +112,8 @@
     triggerMobileNavItem(id) {
         mobileMenu = false;
         this.triggerNavItem(id)
-    }
-    triggerNavItemFromQuery() {
+    },
+    triggerQuery() {
         query: new URLSearchParams(window.location.search).get('#')
         if (query) {
             this.triggerNavItem(query)
