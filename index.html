@@ -112,6 +112,12 @@
         mobileMenu = false;
         this.triggerNavItem(id)
     }
+    triggerNavItemFromQuery() {
+        query: new URLSearchParams(window.location.search).get('#')
+        if (query) {
+            this.triggerNavItem(query)
+        }
+    }
 }"
 >
   <div class="w-full z-50 top-0 py-3 sm:py-5  absolute
