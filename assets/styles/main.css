@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+
+html {
+  @apply font-body antialiased;
+}
+
+ul{
+  list-style-type: none;
+}
+
+li::before{
+    color:#007AD8;
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  margin-top:10px;
+}
+
+ul.menu li::before{
+  color:none;
+  content: none;  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+  margin-top:10px;
+}
+.successM{
+  background-color: #007AD8;
+  height:40px;
+  color:white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.failM{
+  background-color: #FF0000;
+  height:40px;
+  color:white;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+@tailwind utilities;
