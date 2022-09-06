@@ -106,6 +106,7 @@
       <div
   x-data="{
     triggerNavItem(id) {
+      window.history.replaceState({}, document.title, window.location.pathname);
         $scroll(id)
     },
     triggerMobileNavItem(id) {
